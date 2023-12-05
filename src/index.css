@@ -73,6 +73,11 @@
 .im{
   align-items: start;
 }
-.footer-container{
-  
+.foot-container{
+  background: linear-gradient(to bottom, #000000, #3A0101);
+ 
+}
+.l{
+  width: 182px;
+  height: 49px;
 }
