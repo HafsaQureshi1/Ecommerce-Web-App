@@ -81,3 +81,8 @@
   width: 182px;
   height: 49px;
 }
+.bor{
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+}
