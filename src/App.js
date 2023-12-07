@@ -6,6 +6,7 @@ import  Footer  from './components/Footer';
 import {Route, Routes } from 'react-router-dom';
 import Bestselling from './components/Bestselling';
 import Banner from './components/Banner';
+import ExploreProducts from './components/Exploreproducts';
 function App() {
   return (
     <div >
@@ -13,6 +14,7 @@ function App() {
       <Herosection/>
       <Bestselling/>
       <Banner/>
+      <ExploreProducts/>
       <Routes>
     
       </Routes>
