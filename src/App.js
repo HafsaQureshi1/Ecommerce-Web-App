@@ -7,6 +7,7 @@ import {Route, Routes } from 'react-router-dom';
 import Bestselling from './components/Bestselling';
 import Banner from './components/Banner';
 import ExploreProducts from './components/Exploreproducts';
+import Newarrival from './components/Newarrival';
 function App() {
   return (
     <div >
@@ -15,6 +16,8 @@ function App() {
       <Bestselling/>
       <Banner/>
       <ExploreProducts/>
+      <Newarrival/>
+    
       <Routes>
     
       </Routes>
