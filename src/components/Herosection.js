@@ -2,7 +2,6 @@ import arrow from '../assets/images/DropDown.png'
 import star from '../assets/images/stars.png'
 import frame from '../assets/images/Frame 560.png'
 import today from '../assets/images/Frame 625.png' 
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import card1 from '../assets/images/card1.png'
 import card2 from '../assets/images/card2.png'
@@ -19,9 +18,9 @@ import cat5 from '../assets/images/cat5.png'
 export default function Herosection() {
   return (
     < > 
-<div className='container-fluid'>
+<div className='container-fluid '>
 
-  <div className='my-4 row'>
+  <div className=' my-4 row'>
 
 <div style={{marginLeft:'30px'}} className='col-lg-3 col-md-6 col-sm-12 divsize  text-light justify-content-center text-center  '>
 
@@ -42,12 +41,12 @@ export default function Herosection() {
 </div></div>
 <hr />
 <br />
-    <div className='my-2 container'>
+    <div style={{marginLeft:'100px'}} className=' my-2 container'>
       <img className='my-2' src={today} alt="" />
     <p className='my-3 fw-bold' style={{fontSize:'36px'}}>Flash Sales <img style={{marginLeft:'500px'}} src={arrows} alt="" /> </p>
     </div>
-    <div className='my-4 mx-5 container row '>
-    <div className=' col-lg-3 col-md-6 col-sm-12'>
+    <div style={{marginLeft:'100px'}} className='my-4 mx-5 container row '>
+    <div  className=' col-lg-3 col-md-6 col-sm-12'>
     <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={card1} />
       <Card.Body>
@@ -99,16 +98,21 @@ export default function Herosection() {
    <hr />
     </div>
     <div className='my-3 container'>
-      <img src={cat} alt="" /> 
-      <h3 className='my-4 fw-bold'>Browse by Category</h3>     
+      <img className='mx-3' src={cat} alt="" /> 
+      <h3 className='mx-3 my-4 fw-bold'>Browse by Category</h3>     
     </div>
-    <div className='mx-5 my-4 row container justify-content-center text-center'>
+    
+    <div className='mx-5 my-5 row container justify-content-center text-center'>
 <div style={{width:'155px',height:'140px'}} className="mx-3 col-lg-2 col-md-4 col-sm-12 bor justify-content-center text-center"><img style={{width:'50px',marginTop:'20px'}} src={cat1} alt="" /><p className='my-1 fw-bold'>Women</p> </div>
 <div style={{width:'155px',height:'140px'}} className="mx-3 col-lg-2 col-md-4 col-sm-12 bor justify-content-center text-center"><img style={{width:'50px',marginTop:'20px'}} src={cat2} alt="" /><p className='my-1 fw-bold'>Accessories</p> </div>
 <div style={{width:'155px',height:'140px'}} className="mx-3 col-lg-2 col-md-4 col-sm-12 bor justify-content-center text-center"><img style={{width:'50px',marginTop:'20px'}} src={cat3} alt="" /><p className='my-1 fw-bold'>Men</p> </div>
 <div style={{width:'155px',height:'140px', background: 'linear-gradient(to right, #270B0B, #920505)'}} className="  mx-3 col-lg-2 col-md-4 col-sm-12 bor justify-content-center text-center"><img className='mx-2 ' style={{width:'40px',marginTop:'30px',height:'39px'}} src={cat4} alt="" /> <p className='my-1 text-light'>Kids</p> </div>
 <div style={{width:'155px',height:'140px'}} className="mx-3 col-lg-2 col-md-4 col-sm-12 bor justify-content-center text-center"><img style={{width:'50px',marginTop:'20px'}} src={cat5} alt="" /><p className='my-1 fw-bold'>Shawls</p> </div>
-
+<div className='my-3'>
+<br />
+  <hr />
+</div>
+    
     </div>
     </ >
   );
