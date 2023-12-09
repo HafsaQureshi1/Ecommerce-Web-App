@@ -9,6 +9,7 @@ import Banner from './components/Banner';
 import ExploreProducts from './components/Exploreproducts';
 import Newarrival from './components/Newarrival';
 import Features from './components/Features';
+import Allproducts from './components/Allproducts';
 function App() {
   return (
     <div >
@@ -19,6 +20,7 @@ function App() {
       <ExploreProducts/>
       <Newarrival/>
       <Features/>
+      <Allproducts/>
       
       <Routes>
     
