@@ -9,9 +9,10 @@ import month from '../assets/images/month.png'
 export default function Bestselling(){
     return(
         <>
-        <div className=" container my-3">
-            <img className='mx-2' src={month} alt="" />
-            <h2 className='mx-2 my-4 fw-bold'>Best Selling <button style={{marginLeft:'850px',width:'150px'}} className=' btn gradient text-white'>View all</button></h2>
+        
+        <div  style={{marginLeft:'100px'}}  className=" container my-3">
+            <img  className='' src={month} alt="" />
+            <h2 className=' my-4 fw-bold'>Best Selling <button style={{textAlign:'right'}} className=' btn gradient text-white'>View all</button></h2>
             <div className='my-5  container row '>
     <div className=' col-lg-3 col-md-6 col-sm-12'>
     <Card  style={{  border: 'none' }}>

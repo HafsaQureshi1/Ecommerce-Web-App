@@ -18,11 +18,15 @@ import cat5 from '../assets/images/cat5.png'
 const Flash = () => {
     return(
     <div>
-    <div style={{marginLeft:'100px'}} className=' my-2 container'>
-          <img className='my-2' src={today} alt="" />
-        <p className='my-3 fw-bold' style={{fontSize:'36px'}}>Flash Sales <img style={{marginLeft:'500px'}} src={arrows} alt="" /> </p>
-        </div>
-        <div style={{marginLeft:'100px'}} className='my-4 mx-5 container row '>
+    <div style={{}} className='mx-2 my-2 container-fluid'>
+          <img style={{marginLeft:'90px'}} className=' my-2' src={today} alt="" />
+        <br /><br />
+        <div className='mx-4 container row'>
+        <div style={{marginLeft:'50px'}} className=' col-lg-4 col-md-6 col-sm-12 '><span className='my-3 fw-bold' style={{fontSize:'36px'}}>Flash Sales  </span></div>
+        <div className='col-lg-1 col-md-6 col-sm-12'></div>
+        <div className='col-lg-5 col-md-6 col-sm-12'><img  style={{textAlign:'left'}} src={arrows} alt="" /></div>
+        </div></div>
+        <div style={{marginLeft:'90px'}} className='my-4 container row '>
         <div  className=' col-lg-3 col-md-6 col-sm-12'>
         <Card  style={{  border: 'none' }}>
           <Card.Img variant="top" src={card1} />

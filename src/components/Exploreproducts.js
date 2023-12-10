@@ -14,11 +14,12 @@ import today from '../assets/images/product.png'
 export default function ExploreProducts(){
     return(
         < >
+        <br />
         <div style={{marginLeft:'100px'}} className=' my-2 container'>
       <img className='my-2' src={today} alt="" />
-    <p className='my-3 fw-bold' style={{fontSize:'36px'}}>Explore Our Products <img style={{marginLeft:'290px'}} src={arrows} alt="" /> </p>
+    <p className='my-3 fw-bold' style={{fontSize:'36px'}}>Explore Our Products <img className='img-fluid' style={{textAlign:'right'}} src={arrows} alt="" /> </p>
     </div>
-    <div style={{marginLeft:'100px'}} className='my-4 mx-5 container row '>
+    <div style={{marginLeft:'100px'}} className='my-4  container row '>
     <div  className=' col-lg-3 col-md-6 col-sm-12'>
     <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={p1} />
@@ -66,7 +67,7 @@ export default function ExploreProducts(){
       </Card.Body>
     </Card></div>
     </div>
-    <div style={{marginLeft:'100px'}} className='my-4 mx-5 container row '>
+    <div style={{marginLeft:'100px'}} className='my-4  container row '>
     <div  className=' col-lg-3 col-md-6 col-sm-12'>
     <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={p5} />
