@@ -10,6 +10,7 @@ import ExploreProducts from './components/Exploreproducts';
 import Newarrival from './components/Newarrival';
 import Features from './components/Features';
 import Allproducts from './components/Allproducts';
+import About from './components/About';
 function App() {
   return (
     <div >
@@ -21,6 +22,7 @@ function App() {
       <Newarrival/>
       <Features/>
       <Allproducts/>
+      <About/>
       
       <Routes>
     
