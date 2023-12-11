@@ -15,17 +15,14 @@ function App() {
   return (
     <div >
       <Header/>
-      <Herosection/>
-      <Bestselling/>
-      <Banner/>
-      <ExploreProducts/>
-      <Newarrival/>
-      <Features/>
-      <Allproducts/>
-      <About/>
+   
+      
       
       <Routes>
-    
+      <Route path={'/'} element={<Herosection/>}  ></Route>
+      <Route path={'/abt'} element={<About/>}  ></Route>
+      <Route path={'/prod'} element={<Allproducts/>}  ></Route>
+
       </Routes>
       <Footer/>
     </div>

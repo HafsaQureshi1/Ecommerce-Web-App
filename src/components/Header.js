@@ -1,3 +1,5 @@
+
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { Navbar, Container, Nav, Image } from 'react-bootstrap';
 import logo from '../assets/images/logo-black 1.png';
@@ -21,7 +23,8 @@ const Header = () => {
 
   return (
     <>
-      <div className='gradient-container topdiv'></div>
+    
+      <div className='col-sm-12 col-lg-12 col-md-12 container-fluid gradient-container topdiv'></div>
                 
       <Navbar expand="lg" className="">
       <Image className='mx-4'  src={logo} alt="" />
@@ -34,9 +37,9 @@ const Header = () => {
            
               <div className='mx-2  justify-content-center text-center'>
                 <Nav className="head me-auto mx-5">
-                  <Nav.Link className='mx-3 my-1 fw-bold'>Home</Nav.Link>
+                  <Nav.Link className='mx-3 my-1 fw-bold'><Link style={{color:'black',textDecoration:'none'}} to={'/'}>Home </Link></Nav.Link>
                   <Nav.Link className='mx-3 my-1 fw-bold'>Contact</Nav.Link>
-                  <Nav.Link className='mx-3 my-1 fw-bold pad'>About</Nav.Link>
+                  <Nav.Link className='mx-3 my-1 fw-bold pad'><Link style={{color:'black',textDecoration:'none'}} to={'/abt'}>About </Link> </Nav.Link>
                   <div style={{background:'#F5F5F5',height:'36px',width:'200px'}}  className=' mx-5 my-2 search'>
                     <input
                       id="quick_search"

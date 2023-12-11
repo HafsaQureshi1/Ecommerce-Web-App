@@ -1,6 +1,5 @@
-import arrow from '../assets/images/DropDown.png'
+import { Link } from 'react-router-dom'
 import star from '../assets/images/stars.png'
-import frame from '../assets/images/Frame 560.png'
 import today from '../assets/images/Frame 625.png' 
 import Card from 'react-bootstrap/Card';
 import card1 from '../assets/images/card1.png'
@@ -8,25 +7,22 @@ import card2 from '../assets/images/card2.png'
 import card3 from '../assets/images/card3.png'
 import card4 from '../assets/images/card4.png'
 import arrows from '../assets/images/arrows.png'
-import cat from '../assets/images/Categories.png'
-import cat1 from '../assets/images/Category-CellPhone.png'
-import cat2 from '../assets/images/cat2.png'
-import cat3 from '../assets/images/cat3.png'
-import cat4 from '../assets/images/cat4.png'
-import cat5 from '../assets/images/cat5.png'
 
 const Flash = () => {
     return(
     <div>
-    <div style={{}} className='mx-2 my-2 container-fluid'>
-          <img style={{marginLeft:'90px'}} className=' my-2' src={today} alt="" />
+    <div style={{}} className='mx-5 my-2 container-fluid'>
+          <img  className='mx-2 my-2' src={today} alt="" />
         <br /><br />
-        <div className='mx-4 container row'>
-        <div style={{marginLeft:'50px'}} className=' col-lg-4 col-md-6 col-sm-12 '><span className='my-3 fw-bold' style={{fontSize:'36px'}}>Flash Sales  </span></div>
-        <div className='col-lg-1 col-md-6 col-sm-12'></div>
-        <div className='col-lg-5 col-md-6 col-sm-12'><img  style={{textAlign:'left'}} src={arrows} alt="" /></div>
-        </div></div>
-        <div style={{marginLeft:'90px'}} className='my-4 container row '>
+        <div className="container row">
+              <div className="col-lg-10 col-md-6 col-sm-6">
+              <h2 className=' my-4 fw-bold'>Flash Sales </h2>
+              </div>
+              <div className="my-3 col-lg-2 col-md-6 col-sm-12">
+              <img  style={{textAlign:'right'}} src={arrows}/>
+              </div>
+            </div></div>
+        <div style={{marginLeft:'50px'}} className='my-4 container row '>
         <div  className=' col-lg-3 col-md-6 col-sm-12'>
         <Card  style={{  border: 'none' }}>
           <Card.Img variant="top" src={card1} />
@@ -73,7 +69,7 @@ const Flash = () => {
             </Card.Text>
           </Card.Body>
         </Card></div>
-        <div className='my-3 justify-content-center text-center'><button style={{width :'270px',fontSize:'18px'}} className=' gradient-container btn text-light'>View All Products</button>
+        <div className='my-3 justify-content-center text-center'><button style={{width :'270px',fontSize:'18px'}} className=' gradient-container btn text-light'><Link style={{color:'white',textDecoration:'none'}} to={'/prod'}>View All products </Link></button>
        <br /><br />
        </div>
        <hr />

@@ -17,6 +17,11 @@ import cat4 from '../assets/images/cat4.png'
 import cat5 from '../assets/images/cat5.png'
 
 import { Flash } from './Flash';
+import Bestselling from './Bestselling';
+import Banner from './Banner';
+import ExploreProducts from './Exploreproducts';
+import Newarrival from './Newarrival';
+import Features from './Features';
 export default function Herosection() {
   return (
     < > 
@@ -47,11 +52,11 @@ export default function Herosection() {
 <Flash/>
    
     <div className='my-3 container'>
-      <img className='mx-3' src={cat} alt="" /> 
-      <h3 className='mx-3 my-4 fw-bold'>Browse by Category</h3>     
+      <img className='' src={cat} alt="" /> 
+      <h3 className=' my-4 fw-bold'>Browse by Category</h3>     
     </div>
     
-    <div className='mx-5 my-5 row container justify-content-center text-center'>
+    <div className='mx-3 my-5 row container justify-content-center text-center'>
 <div style={{width:'155px',height:'140px'}} className="mx-3 col-lg-2 col-md-4 col-sm-12 bor justify-content-center text-center"><img style={{width:'50px',marginTop:'20px'}} src={cat1} alt="" /><p className='my-1 fw-bold'>Women</p> </div>
 <div style={{width:'155px',height:'140px'}} className="mx-3 col-lg-2 col-md-4 col-sm-12 bor justify-content-center text-center"><img style={{width:'50px',marginTop:'20px'}} src={cat2} alt="" /><p className='my-1 fw-bold'>Accessories</p> </div>
 <div style={{width:'155px',height:'140px'}} className="mx-3 col-lg-2 col-md-4 col-sm-12 bor justify-content-center text-center"><img style={{width:'50px',marginTop:'20px'}} src={cat3} alt="" /><p className='my-1 fw-bold'>Men</p> </div>
@@ -60,9 +65,14 @@ export default function Herosection() {
 <div className='my-3'>
 <br />
   <hr />
-</div>
-    
+</div>  
     </div>
+    
+<Bestselling/> 
+<Banner/> 
+<ExploreProducts/>
+<Newarrival/>
+<Features/>
     </ >
   );
 }

@@ -5,7 +5,7 @@ import delivery from '../assets/images/delivery.png';
 export default function Features(){
 return(
     <>
-    <div className="mx-5 p-5 my-5 container row justify-content-center text-center">
+    <div className=" p-5 my-5 container-fluid row justify-content-center text-center">
     <div className="col-lg-4 col-md-6 cl-sm-12 justify-content-center text-center">
     <img className='my-3' src={delivery} alt="" />
     <p className='fw-bold'> FREE AND FAST DELIVERY</p>

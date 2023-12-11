@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import arrows from '../assets/images/arrows.png'
 import star from '../assets/images/stars.png'
@@ -15,19 +16,19 @@ export default function ExploreProducts(){
     return(
         < >
         <br />
-        <div style={{marginLeft:'100px'}} className=' my-2 container'>
-      <img className='my-2' src={today} alt="" />
-    <p className='my-3 fw-bold' style={{fontSize:'36px'}}>Explore Our Products <img className='img-fluid' style={{textAlign:'right'}} src={arrows} alt="" /> </p>
+        <div style={{marginLeft:'60px'}} className=' my-2 container-fluid'>
+      <img className= ' mx-3 my-2' src={today} alt="" />
+    <p className='mx-3 my-3 fw-bold' style={{fontSize:'36px'}}>Explore Our Products <img className='img-fluid' style={{textAlign:'right'}} src={arrows} alt="" /> </p>
     </div>
-    <div style={{marginLeft:'100px'}} className='my-4  container row '>
+    <div style={{marginLeft:'30px'}} className='my-4  container row '>
     <div  className=' col-lg-3 col-md-6 col-sm-12'>
     <Card  style={{  border: 'none' }}>
-      <Card.Img variant="top" src={p1} />
+      <img src={p1} alt="" />
       <Card.Body>
         <Card.Title>Balochi Doch</Card.Title>
         $120   <span style={{marginLeft:'8px', textDecoration: 'line-through' }}>  $160</span>  
         <Card.Text>
-      <img src={star} alt="" />
+      <img  className='img-fluid' src={star} alt="" />
         <br /><br />
         </Card.Text>
       </Card.Body>
@@ -67,7 +68,7 @@ export default function ExploreProducts(){
       </Card.Body>
     </Card></div>
     </div>
-    <div style={{marginLeft:'100px'}} className='my-4  container row '>
+    <div style={{marginLeft:'60px'}} className='my-4  container row '>
     <div  className=' col-lg-3 col-md-6 col-sm-12'>
     <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={p5} />
@@ -114,7 +115,7 @@ export default function ExploreProducts(){
         </Card.Text>
       </Card.Body>
     </Card></div>
-    <div className='my-3 justify-content-center text-center'><button style={{width :'270px',fontSize:'18px'}} className=' gradient-container btn text-light'>View All Products</button>
+    <div className='my-3 justify-content-center text-center'><Link to={'/prod'} style={{color:'white',textDecoration:'none'}}><button style={{width :'270px',fontSize:'18px'}} className=' gradient-container btn text-light'>  View All Products</button></Link>
    <br /><br />
    </div>
    <hr />

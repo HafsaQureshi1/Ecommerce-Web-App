@@ -22,6 +22,7 @@ import { Container, Row, Col, Dropdown } from 'react-bootstrap';
 export default function Allproducts(){
     return(
 <>
+<div className="container">
 <h5>Home/<span style={{color:"#000000"}}>All Products</span></h5>
 <h1 className='my-5'>All Products</h1>
 <Container className="d-flex justify-content-end">
@@ -43,10 +44,10 @@ export default function Allproducts(){
           </Col>
         </Row>
       </Container>
-<div className="container-fuild ">
+<div className="container  ">
   <div class="row">
     <div className='col-lg-4 col-md-6 col-sm-12'>
-<Card className='mx-5'  style={{ width: '18rem',border:'none' }}>
+<Card className=''  style={{ width: '18rem',border:'none' }}>
     <Card.Img className='mx-3' variant="top " src={img} />
     <Card.Body style={{marginLeft:'none'}}>
       <Card.Title>Baby Crochet Design</Card.Title>
@@ -60,7 +61,7 @@ export default function Allproducts(){
   </div>
 
    <div className='col-lg-4 col-md-6 col-sm-12'>
-<Card className='mx-5'  style={{ width: '18rem',border:'none' }}>
+<Card className=''  style={{ width: '18rem',border:'none' }}>
     <Card.Img className='mx-3' variant="top " src={img2} />
     <Card.Body style={{marginLeft:'none'}}>
       <Card.Title>Balochi Doch</Card.Title>
@@ -74,7 +75,7 @@ export default function Allproducts(){
   </div>
 
    <div className='col-lg-4 col-md-6 col-sm-12'>
-<Card className='mx-5'  style={{ width: '18rem',border:'none' }}>
+<Card className=''  style={{ width: '18rem',border:'none' }}>
     <Card.Img className='mx-3' variant="top " src={img3} />
     <Card.Body style={{marginLeft:'none'}}>
       <Card.Title>  Crochet Dress</Card.Title>
@@ -90,10 +91,10 @@ export default function Allproducts(){
   </div>
 
 
-  <div className="container-fuild my-5">
+  <div className="container my-5">
   <div class="row">
     <div className='col-lg-4 col-md-6 col-sm-12'>
-<Card className='mx-5'  style={{ width: '18rem',border:'none' }}>
+<Card className=''  style={{ width: '18rem',border:'none' }}>
     <Card.Img className='mx-3' variant="top " src={img4} />
     <Card.Body style={{marginLeft:'none'}}>
       <Card.Title>Applique Chaddar </Card.Title>
@@ -107,7 +108,7 @@ export default function Allproducts(){
   </div>
 
    <div className='col-lg-4 col-md-6 col-sm-12'>
-<Card className='mx-5'  style={{ width: '18rem',border:'none' }}>
+<Card className=''  style={{ width: '18rem',border:'none' }}>
     <Card.Img className='mx-3' variant="top " src={img5} />
     <Card.Body style={{marginLeft:'none'}}>
       <Card.Title>Embroidered Dress</Card.Title>
@@ -121,7 +122,7 @@ export default function Allproducts(){
   </div>
 
    <div className='col-lg-4 col-md-6 col-sm-12'>
-<Card className='mx-5'  style={{ width: '18rem',border:'none' }}>
+<Card className=''  style={{ width: '18rem',border:'none' }}>
     <Card.Img className='mx-3' variant="top " src={img6} />
     <Card.Body style={{marginLeft:'none'}}>
       <Card.Title>Hand-Embroidered Dress</Card.Title>
@@ -140,10 +141,10 @@ export default function Allproducts(){
 
 
 
-  <div className="container-fuild">
+  <div className="container">
   <div class="row">
     <div className='col-lg-4 col-md-6 col-sm-12'>
-<Card className='mx-5'  style={{ width: '18rem',border:'none' }}>
+<Card className=''  style={{ width: '18rem',border:'none' }}>
     <Card.Img className='mx-3' variant="top " src={img7} />
     <Card.Body style={{marginLeft:'none'}}>
       <Card.Title>Applique Dress </Card.Title>
@@ -157,7 +158,7 @@ export default function Allproducts(){
   </div>
 
    <div className='col-lg-4 col-md-6 col-sm-12'>
-<Card className='mx-5'  style={{ width: '18rem',border:'none' }}>
+<Card className=''  style={{ width: '18rem',border:'none' }}>
     <Card.Img className='mx-3' variant="top " src={img8} />
     <Card.Body style={{marginLeft:'none'}}>
       <Card.Title>Applique Dress</Card.Title>
@@ -171,7 +172,7 @@ export default function Allproducts(){
   </div>
 
    <div className='col-lg-4 col-md-6 col-sm-12'>
-<Card className='mx-5'  style={{ width: '18rem',border:'none' }}>
+<Card className=''  style={{ width: '18rem',border:'none' }}>
     <Card.Img className='mx-3' variant="top " src={img9} />
     <Card.Body style={{marginLeft:'none'}}>
       <Card.Title>Ajrak Dress</Card.Title>
@@ -182,6 +183,7 @@ export default function Allproducts(){
       <Button  style={{width:'270px'}} className='gradient-container'>Add to Cart</Button>
     </Card.Body>
   </Card>
+  </div>
   </div>
   </div>
   </div>

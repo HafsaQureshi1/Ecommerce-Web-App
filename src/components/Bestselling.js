@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import s1 from '../assets/images/s1.png'
 
 import s2 from '../assets/images/s2.png'
@@ -10,11 +11,18 @@ export default function Bestselling(){
     return(
         <>
         
-        <div  style={{marginLeft:'100px'}}  className=" container my-3">
-            <img  className='' src={month} alt="" />
-            <h2 className=' my-4 fw-bold'>Best Selling <button style={{textAlign:'right'}} className=' btn gradient text-white'>View all</button></h2>
+        <div    className="mx-3 container-fluid my-3">
+            <img  className='mx-5' src={month} alt="" />
+            <div className="row">
+              <div className="col-lg-8 col-md-6 col-sm-12">
+              <h2 className='mx-5 my-4 fw-bold'>Best Selling </h2>
+              </div>
+              <div  className="my-3 col-lg-4 col-md-6 col-sm-12">
+              <button style={{textAlign:'right', marginLeft:'200px'}} className=' btn gradient text-white'> <Link to={'/prod'} style={{color:'white',textDecoration:'none'}}> View all</Link></button>
+              </div>
+            </div>
             <div className='my-5  container row '>
-    <div className=' col-lg-3 col-md-6 col-sm-12'>
+    <div  className=' col-lg-3 col-md-6 col-sm-12'>
     <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={s1} />
       <Card.Body>

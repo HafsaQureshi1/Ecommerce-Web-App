@@ -6,7 +6,7 @@ import em from '../assets/images/Send Mail.png'
 import p from '../assets/images/Frame 741.png'
 const Footer = () => {
   return (
-    <footer className="foot-container text-light">
+    <div className="container-fluid foot-container text-light">
       <Container>
         <Row>
           <Col>
@@ -41,7 +41,7 @@ const Footer = () => {
       <div>
         <img className='my-3' src={fr} alt="" />
       </div>
-    </footer>
+    </div>
   );
 };
 
