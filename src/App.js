@@ -10,19 +10,21 @@ import ExploreProducts from './components/Exploreproducts';
 import Newarrival from './components/Newarrival';
 import Features from './components/Features';
 import Allproducts from './components/Allproducts';
+import Contact from './components/Contact';
 import About from './components/About';
+import Productdetails from './components/Productdetails';
 function App() {
   return (
     <div >
       <Header/>
-   
-      
+      <Contact/>
+      <Productdetails/>
       
       <Routes>
       <Route path={'/'} element={<Herosection/>}  ></Route>
       <Route path={'/abt'} element={<About/>}  ></Route>
       <Route path={'/prod'} element={<Allproducts/>}  ></Route>
-
+      <Route path={'/cont'} element={<Contact/>}  ></Route>
       </Routes>
       <Footer/>
     </div>
