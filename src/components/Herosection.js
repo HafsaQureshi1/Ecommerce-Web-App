@@ -1,14 +1,6 @@
 
 import arrow from '../assets/images/DropDown.png'
-import star from '../assets/images/stars.png'
 import frame from '../assets/images/Frame 560.png'
-import today from '../assets/images/Frame 625.png' 
-import Card from 'react-bootstrap/Card';
-import card1 from '../assets/images/card1.png'
-import card2 from '../assets/images/card2.png'
-import card3 from '../assets/images/card3.png'
-import card4 from '../assets/images/card4.png'
-import arrows from '../assets/images/arrows.png'
 import cat from '../assets/images/Categories.png'
 import cat1 from '../assets/images/Category-CellPhone.png'
 import cat2 from '../assets/images/cat2.png'
