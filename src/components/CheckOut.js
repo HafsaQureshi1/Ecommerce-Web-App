@@ -28,7 +28,25 @@ export default function CheckOut() {
       <br />
       <input type="text" id="userName" style={{background:'#F5F5F5',height:'50px',width:'470px', border:'none'}} />
     </div>
-
+    <div>
+      <label htmlFor="userName" style={ {marginTop: '25px',   fontFamily: 'Ag, sans-serif',  opacity: 0.4, }} >Town/City</label>
+      <br />
+      <input type="text" id="userName" style={{background:'#F5F5F5',height:'50px',width:'470px', border:'none'}} />
+    </div>
+    <div>
+      <label htmlFor="userName" style={ {marginTop: '25px',   fontFamily: 'Ag, sans-serif',  opacity: 0.4, }} >Phone Number</label>
+      <br />
+      <input type="text" id="userName" style={{background:'#F5F5F5',height:'50px',width:'470px', border:'none'}} />
+    </div>
+    <div>
+      <label htmlFor="userName" style={ {marginTop: '25px',   fontFamily: 'Ag, sans-serif',  opacity: 0.4, }} >Email Address</label>
+      <br />
+      <input type="text" id="userName" style={{background:'#F5F5F5',height:'50px',width:'470px', border:'none'}} />
+    </div>
+    <label style={ {marginTop: '25px',marginBottom: '25px',  fontWeight: '100'}}>
+        <input type="checkbox" style={{ background:'red', marginRight: '10px'}}/>
+        Save this information for faster checkout next time 
+      </label>
     </div>
   )
 }
