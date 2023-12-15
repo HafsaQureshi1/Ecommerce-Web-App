@@ -9,6 +9,7 @@ import Allproducts from './components/Allproducts';
 import Contact from './components/Contact';
 import About from './components/About';
 import Productdetails from './components/Productdetails';
+import CheckOut from './components/CheckOut';
 
 import { useState } from 'react';
 
@@ -19,6 +20,7 @@ function App() {
       <Header/>
 
       <Contact/>
+      <CheckOut/>
       <Productdetails/>
       <Routes>
   
