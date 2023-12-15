@@ -6,8 +6,18 @@ import React from "react"
       };
 export default function CheckOut() {
   return (
+    <>
+   <h6 style={{ marginLeft: '250px', marginBottom: '100px', fontFamily: 'Ag, sans-serif', }}>
+        <span style={{ opacity: 0.4 }}>Account</span>
+        &nbsp; / &nbsp;
+        <span style={{ opacity: 0.4 }}>MyAccount</span>
+        &nbsp; / &nbsp;
+        <span style={{ opacity: 0.4 }}>Products</span>
+        &nbsp; / &nbsp;
+        <span style={{ opacity: 1.0 }}>Checkout</span>
+      </h6>
     <div style={textStyle}>
-      <h2 >Billing Details</h2>
+      <h2>Billing Details</h2>
       <div>
       <label htmlFor="userName" style={ {marginTop: '50px',   fontFamily: 'Ag, sans-serif',  opacity: 0.4, }} >First Name</label>
       <br />
@@ -48,5 +58,6 @@ export default function CheckOut() {
         Save this information for faster checkout next time 
       </label>
     </div>
+    </>
   )
 }
