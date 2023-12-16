@@ -97,3 +97,7 @@
   width: 155px;
   height: 140px;
  }
+ .form-check-input:checked {
+  background-color: black;
+  border-color: black;
+}
