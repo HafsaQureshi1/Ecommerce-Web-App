@@ -16,41 +16,41 @@ export default function CheckOut() {
         &nbsp; / &nbsp;
         <span style={{ opacity: 1.0 }}>Checkout</span>
       </h6>
-    <div className="container-fluid" style={textStyle}>
-      <h2>Billing Details </h2>
-      <div className="row">
-      <div className="col-lg-4">
-      <div>
+    <div className="container-fluid mx-5 my-5" >
+      <h2 className="p-4 mx-5">Billing Details </h2>
+      <div className="mx-5 row">
+      <div className=" col-lg-6">
+      <div className="container">
       <label htmlFor="userName" style={ {marginTop: '50px',   fontFamily: 'Ag, sans-serif',  opacity: 0.4, }} >First Name</label>
       <br />
       <input type="text" id="userName" style={{background:'#F5F5F5',height:'50px',width:'470px', border:'none'}} />
     </div>
-    <div>
+    <div className="container">
       <label htmlFor="userName" style={ {marginTop: '25px',   fontFamily: 'Ag, sans-serif',  opacity: 0.4, }} >Company Name</label>
       <br />
       <input type="text" id="userName" style={{background:'#F5F5F5',height:'50px',width:'470px', border:'none'}} />
     </div>
-    <div>
+    <div className="container">
       <label htmlFor="userName" style={ {marginTop: '25px',   fontFamily: 'Ag, sans-serif',  opacity: 0.4, }} >Street Address</label>
       <br />
       <input type="text" id="userName" style={{background:'#F5F5F5',height:'50px',width:'470px', border:'none'}} />
     </div>
-    <div>
+    <div className="container">
       <label htmlFor="userName" style={ {marginTop: '25px',   fontFamily: 'Ag, sans-serif',  opacity: 0.4, }} >Apartment, floor, etc (optional)</label>
       <br />
       <input type="text" id="userName" style={{background:'#F5F5F5',height:'50px',width:'470px', border:'none'}} />
     </div>
-    <div>
+    <div className="container">
       <label htmlFor="userName" style={ {marginTop: '25px',   fontFamily: 'Ag, sans-serif',  opacity: 0.4, }} >Town/City</label>
       <br />
       <input type="text" id="userName" style={{background:'#F5F5F5',height:'50px',width:'470px', border:'none'}} />
     </div>
-    <div>
+    <div className="container">
       <label htmlFor="userName" style={ {marginTop: '25px',   fontFamily: 'Ag, sans-serif',  opacity: 0.4, }} >Phone Number</label>
       <br />
       <input type="text" id="userName" style={{background:'#F5F5F5',height:'50px',width:'470px', border:'none'}} />
     </div>
-    <div>
+    <div className="container">
       <label htmlFor="userName" style={ {marginTop: '25px',   fontFamily: 'Ag, sans-serif',  opacity: 0.4, }} >Email Address</label>
       <br />
       <input type="text" id="userName" style={{background:'#F5F5F5',height:'50px',width:'470px', border:'none'}} />
@@ -60,8 +60,8 @@ export default function CheckOut() {
         Save this information for faster checkout next time 
       </label>
 
-      </div>
-      <div className="my-5 mx-5 col-lg-6">
+      </div >
+      <div className="my-5  col-lg-6">
       <br />
       <img className="mx-4" src={de} alt="" />
       <div className="my-5 form-check">
@@ -80,24 +80,25 @@ export default function CheckOut() {
         {/* Input field column */}
         <div className="col-lg-6 mb-3 ">
           <input
-            style={{textAlign:'left', width: '100%',height:'50px' }}
+            style={{textAlign:'left', width: '105%',height:'50px' }}
             className='form-control'
             type="text"
             placeholder="Coupon code"
           />
-           <button style={{width:'250px',height:'50px'}} className='my-4 gradient btn text-light' type="submit">Place order</button>
+           <button style={{width:'250px',height:'50px',borderRadius:'0px',fontSize:'18px'}} className='my-4 gradient btn text-light' type="submit">Place order</button>
         
         </div>
 
         {/* Button column */}
         <div className="col-lg-6 mb-3">
-          <button style={{width:'200px',height:'50px'}} className='gradient btn text-light' type="submit">Apply Coupon</button>
+          <button style={{width:'200px',height:'50px',borderRadius:'0px',fontSize:'18px' }} className='gradient btn text-light' type="submit">Apply Coupon</button>
         </div>
       </div>
     </div>
         </div>
       </div>
 </div>          </div>
+ <br /><br /><br /><br />
     </>
   )
 }

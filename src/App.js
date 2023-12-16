@@ -19,13 +19,15 @@ function App() {
     <div >
       <Header/>
 
-      <Contact/>
-      <CheckOut/>
+      
       <Productdetails/>
       <Routes>
   
       <Route path={'/'} element={<Herosection/>}  ></Route>
       <Route path={'/abt'} element={<About/>}  ></Route>
+      <Route path={'/con'} element={<Contact/>}  ></Route>
+      <Route path={'/check'} element={<CheckOut/>}  ></Route>
+      
       <Route path={'/prod'} element={<Allproducts/>}  ></Route>
       </Routes>
       <Footer/>

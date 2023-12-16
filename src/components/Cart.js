@@ -1,6 +1,7 @@
+
 // Cart.js
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 export default function Cart({ cart, removeFromCart }) {
   const calculateTotal = () => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0);
@@ -91,7 +92,8 @@ export default function Cart({ cart, removeFromCart }) {
         
     </div>
     </div>
-    <button style={{width:'350px'}} className='mx-5 my-4 justify-content-center text-center gradient btn btn-lg text-light'>Process to checkout</button>
+    <Link style={{color:'white',textDecoration:'none'}} to={'/check'}><button style={{width:'350px'}} className='mx-5 my-4 justify-content-center text-center gradient btn btn-lg text-light'>Process to Checkout</button> </Link>
+    
     </div></div></div>
 
 </>  );
