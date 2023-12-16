@@ -31,13 +31,13 @@ export default function Herosection() {
 <p className='mx-4 my-3'>Shawls   <span><img style={{marginLeft:'107px'}} src={arrow} alt="" /></span></p>
 
 </div>
-<div className='  col-lg-1 col-md-l 'style={{width:'auto'}}>
+<div className='  col-lg-1 col-md-1 'style={{width:'auto'}}>
   <div className='vertical-line'></div>
   
 </div>
 
-<div className='col-lg-8 col-md-6 col-sm-6'>
-  <img className=' img-fluid ' src={frame} alt="" /></div>
+<div className='col-lg-8 col-md-5 col-sm-12'>
+  <img style={{width:'100%'}} className=' img-fluid ' src={frame} alt="" /></div>
 </div></div>
 <hr />
 <br />
@@ -48,7 +48,7 @@ export default function Herosection() {
       <h3 className=' my-4 fw-bold'>Browse by Category</h3>     
     </div>
     
-    <div className='mx-3 my-5 row container justify-content-center text-center'>
+    <div className='mx-3 my-5 row container-fluid justify-content-center text-center'>
 <div style={{width:'155px',height:'140px'}} className="mx-3 col-lg-2 col-md-4 col-sm-12 bor justify-content-center text-center"><img style={{width:'50px',marginTop:'20px'}} src={cat1} alt="" /><p className='my-1 fw-bold'>Women</p> </div>
 <div style={{width:'155px',height:'140px'}} className="mx-3 col-lg-2 col-md-4 col-sm-12 bor justify-content-center text-center"><img style={{width:'50px',marginTop:'20px'}} src={cat2} alt="" /><p className='my-1 fw-bold'>Accessories</p> </div>
 <div style={{width:'155px',height:'140px'}} className="mx-3 col-lg-2 col-md-4 col-sm-12 bor justify-content-center text-center"><img style={{width:'50px',marginTop:'20px'}} src={cat3} alt="" /><p className='my-1 fw-bold'>Men</p> </div>

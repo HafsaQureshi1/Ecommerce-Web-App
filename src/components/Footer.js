@@ -6,7 +6,7 @@ import em from '../assets/images/Send Mail.png'
 import p from '../assets/images/Frame 741.png'
 const Footer = () => {
   return (
-    <div className="container-fluid foot-container text-light">
+    <div style={{width:'110%'}} className="container-fluid foot-container text-light">
       <Container>
         <Row>
           <Col>

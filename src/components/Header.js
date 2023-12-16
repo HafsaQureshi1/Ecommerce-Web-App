@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <>
     
-      <div className='col-sm-12 col-lg-12 col-md-12 container-fluid gradient-container topdiv'></div>
+      <div style={{width:'100%'}} className='col-sm-12 col-lg-12 col-md-12 container-fluid gradient-container topdiv'></div>
                 
       <Navbar expand="lg" className="">
       <Image className='mx-4'  src={logo} alt="" />
