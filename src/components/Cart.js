@@ -10,12 +10,12 @@ export default function Cart({ cart, removeFromCart }) {
   return (
 <>
 <br /> <br />
-<div className="container mt-5">
+<div className="container ">
       <div className="row">
-      <div className="my-3 col-lg-3 fw-bold ">Product </div>
-            <div className="my-3 col-lg-3 fw-bold">Price </div>
-            <div className="my-3 col-lg-3 fw-bold">Quantity</div>
-            <div className="my-3 col-lg-3 fw-bold">Subtotal </div>
+      <div className="my-3 col-lg-3 col-sm-6 fw-bold ">Product  </div>
+            <div className="my-3 col-lg-3 fw-bold col-sm-6">Price </div>
+            <div className="my-3 col-lg-3 fw-bold col-sm-6">Quantity</div>
+            <div className="my-3 col-lg-3 fw-bold col-sm-6">Subtotal </div>
             </div>
          
       {cart.map((item) => (
@@ -39,30 +39,24 @@ export default function Cart({ cart, removeFromCart }) {
             <div className="col-lg-4 col-md-6 col-sm-12 my-5"><button style={{width:'250px' ,border: '2px solid #000'}}  className='btn '>Update Cart</button></div>
         </div>
     </div>
-    <div className="container mt-4">
-      <div className="row">
-        {/* Input field column */}
-        <div className="col-lg-3 mb-3 ">
+    <div className="container-fluid  mb-5">
+    <div className="row">
+    <div style={{}} className=" col-lg-3 mb-3 ">
           <input
-            style={{ width: '95%' }}
-            className='form-control'
+            style={{ width: '90%' }}
+            className='mx-5 form-control'
             type="text"
             placeholder="Coupon code"
           />
         </div>
 
         {/* Button column */}
-        <div className="col-lg-9 mb-3">
+        <div className=" mx-5 col-lg-2 mb-3">
           <button style={{width:'200px'}} className='gradient btn text-light' type="submit">Apply Coupon</button>
         </div>
-      </div>
-    </div>
-    <div className="container-fluid  mb-5">
-    <div className="row">    
-    <div className="col-lg-6 col-md-6 col-sm-12">
-    </div>
-    <div style={{border:'3px solid #000'}} className=" col-lg-6 col-md-6 col-sm-12">
-    <h3 className='mx-4 my-5'>Cart Total</h3>
+          
+    <div style={{border:'3px solid #000'}} className="mx-2 col-lg-5 col-md-6 col-sm-12">
+    <h3 className='mx-4 my-4'>Cart Total</h3>
     <div className="mx-3 row">    
     <div className="col-lg-8 col-md-6 col-sm-12">
         Subtotal
@@ -91,8 +85,9 @@ export default function Cart({ cart, removeFromCart }) {
         <p>${calculateTotal()}</p>
         
     </div>
+    <Link style={{color:'white',textDecoration:'none'}} to={'/check'}><button  className='mx-5 my-4 justify-content-center text-center gradient btn btn-lg text-light'>Process to Checkout</button> </Link>
+    
     </div>
-    <Link style={{color:'white',textDecoration:'none'}} to={'/check'}><button style={{width:'350px'}} className='mx-5 my-4 justify-content-center text-center gradient btn btn-lg text-light'>Process to Checkout</button> </Link>
     
     </div></div></div>
 

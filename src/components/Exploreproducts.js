@@ -20,8 +20,9 @@ export default function ExploreProducts(){
       <img className= ' mx-3 my-2' src={today} alt="" />
     <p className='mx-3 my-3 fw-bold' style={{fontSize:'36px'}}>Explore Our Products <img className='img-fluid' style={{textAlign:'right'}} src={arrows} alt="" /> </p>
     </div>
-    <div style={{marginLeft:'30px'}} className='my-4  container row '>
+    <div style={{marginLeft:'30px'}} className='my-4  container-fluid row '>
     <div  className=' col-lg-3 col-md-6 col-sm-12'>
+    <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
     <Card  style={{  border: 'none' }}>
       <img src={p1} alt="" />
       <Card.Body>
@@ -32,9 +33,13 @@ export default function ExploreProducts(){
         <br /><br />
         </Card.Text>
       </Card.Body>
-    </Card>
+    </Card></Link>
     </div>
-    <div className='col-lg-3 col-md-6 col-sm-12'><Card  style={{  border: 'none' }}>
+    <div className='col-lg-3 col-md-6 col-sm-12'>
+    <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
+    
+      <Card  style={{  border: 'none' }}>
+      
       <Card.Img variant="top" src={p2} />
       <Card.Body>
         <Card.Title>Embroidered Dress</Card.Title>
@@ -44,8 +49,11 @@ export default function ExploreProducts(){
         <br /><br />
         </Card.Text>
       </Card.Body>
-    </Card></div>
-    <div className='col-lg-3 col-md-6 col-sm-12'><Card  style={{  border: 'none' }}>
+    </Card></Link></div>
+    <div className='col-lg-3 col-md-6 col-sm-12'>
+    <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
+    
+      <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={p3} />
       <Card.Body>
         <Card.Title>Embroidered Dress</Card.Title>
@@ -55,8 +63,11 @@ export default function ExploreProducts(){
         <br /><br />
         </Card.Text>
       </Card.Body>
-    </Card></div>
-    <div className='col-lg-3 col-md-6 col-sm-12'><Card  style={{  border: 'none' }}>
+    </Card></Link></div>
+    <div className='col-lg-3 col-md-6 col-sm-12'>
+    <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
+    
+      <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={p4} />
       <Card.Body>
         <Card.Title>Blue Applique Dress </Card.Title>
@@ -66,10 +77,12 @@ export default function ExploreProducts(){
         <br /><br />
         </Card.Text>
       </Card.Body>
-    </Card></div>
+    </Card></Link></div>
     </div>
-    <div style={{marginLeft:'60px'}} className='my-4  container row '>
+    <div style={{marginLeft:'60px'}} className='my-4  container-fluid row '>
     <div  className=' col-lg-3 col-md-6 col-sm-12'>
+    <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
+    
     <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={p5} />
       <Card.Body>
@@ -80,9 +93,11 @@ export default function ExploreProducts(){
         <br /><br />
         </Card.Text>
       </Card.Body>
-    </Card>
+    </Card></Link>
     </div>
-    <div className='col-lg-3 col-md-6 col-sm-12'><Card  style={{  border: 'none' }}>
+    <div className='col-lg-3 col-md-6 col-sm-12'>
+    <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
+    <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={p6} />
       <Card.Body>
         <Card.Title>Embroidered Dress</Card.Title>
@@ -92,8 +107,11 @@ export default function ExploreProducts(){
         <br /><br />
         </Card.Text>
       </Card.Body>
-    </Card></div>
-    <div className='col-lg-3 col-md-6 col-sm-12'><Card  style={{  border: 'none' }}>
+    </Card></Link></div>
+    <div className='col-lg-3 col-md-6 col-sm-12'>
+    <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
+    
+      <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={p7} />
       <Card.Body>
         <Card.Title>Embroidered Dress</Card.Title>
@@ -103,8 +121,11 @@ export default function ExploreProducts(){
         <br /><br />
         </Card.Text>
       </Card.Body>
-    </Card></div>
-    <div className='col-lg-3 col-md-6 col-sm-12'><Card  style={{  border: 'none' }}>
+    </Card></Link></div>
+    <div className='col-lg-3 col-md-6 col-sm-12'>
+    <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
+    
+      <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={p8} />
       <Card.Body>
         <Card.Title>Blue Applique Dress </Card.Title>
@@ -114,7 +135,7 @@ export default function ExploreProducts(){
         <br /><br />
         </Card.Text>
       </Card.Body>
-    </Card></div>
+    </Card></Link></div>
     <div className='my-3 justify-content-center text-center'><Link to={'/prod'} style={{color:'white',textDecoration:'none'}}><button style={{width :'270px',fontSize:'18px'}} className=' gradient-container btn text-light'>  View All Products</button></Link>
    <br /><br />
    </div>

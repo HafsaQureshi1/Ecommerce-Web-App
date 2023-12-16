@@ -40,9 +40,9 @@ export default function AllProducts() {
 
   return (
     <>
-      <div className="container">
-        <h5>Home/<span style={{ color: "#000000" }}>All Products</span></h5>
-        <h1 className='my-5'>All Products</h1>
+      <div className="container-fluid">
+        <h5 className='mx-5'>Home/<span style={{ color: "#000000" }}>All Products</span></h5>
+        <h1 className='mx-5 my-5'>All Products</h1>
         <Container className="d-flex justify-content-end">
           <Row>
             <Col xs="auto">
@@ -62,33 +62,72 @@ export default function AllProducts() {
             </Col>
           </Row>
         </Container>
-        <div className="container">
-          <div className="row">
-            <ProductCard img={img} title="Baby Crochet Design" stars={stars} price={145} addToCart={() => addToCart({ id: 1, name: 'Baby Crochet Design', price: 145 })} />
-            <ProductCard img={img2} title="Balochi Doch" stars={stars2} price={180} addToCart={() => addToCart({ id: 2, name: 'Balochi Doch', price: 180 })} />
-            <ProductCard img={img3} title="Crochet Dress" stars={stars3} price={120} addToCart={() => addToCart({ id: 3, name: 'Crochet Dress', price: 120 })} />
-            {/* Add more ProductCard components as needed */}
-          </div>
-        </div>
-        <div className="container my-5">
-        <div className="row">
-            <ProductCard img={img4} title="Applique Chaddar " stars={stars} price={240} addToCart={() => addToCart({ id: 4, name: 'Baby Crochet Design', price: 145 })} />
-            <ProductCard img={img5} title="Embroidered Dress" stars={stars2} price={180} addToCart={() => addToCart({ id: 5, name: 'Balochi Doch', price: 180 })} />
-            <ProductCard img={img6} title="Hand-Embroidered Dress" stars={stars3} price={130} addToCart={() => addToCart({ id: 6, name: 'Crochet Dress', price: 120 })} />
-            {/* Add more ProductCard components as needed */}
-          </div>
-          {/* ... Your existing code ... */}
-        </div>
-        <div className="container my-5">
-        <div className="row">
-            <ProductCard  img={img7} title="Applique Dress" stars={stars} price={212} addToCart={() => addToCart({ id: 7, name: 'Baby Crochet Design', price: 145 })} />
-            <ProductCard img={img8} title="Applique Dress" stars={stars2} price={145} addToCart={() => addToCart({ id: 8, name: 'Balochi Doch', price: 180 })} />
-            <ProductCard img={img9} title="Ajrak Dress" stars={stars3} price={80} addToCart={() => addToCart({ id: 9, name: 'Crochet Dress', price: 120 })} />
-            {/* Add more ProductCard components as needed */}
-          </div>
-          {/* ... Your existing code ... */}
-        </div>
-        <div className="container mt-5">
+        <div className="container-fluid">
+  <div className="mx-3 row">
+    <div className="col-lg-4 col-md-6 col-sm-12">
+     
+        <ProductCard
+          img={img}
+          title="Baby Crochet Design"
+          stars={stars}
+          price={145}
+          addToCart={() => addToCart({ id: 1, name: 'Baby Crochet Design', price: 145 })}
+        />
+     
+    </div>
+    <div className="col-lg-4 col-md-6 col-sm-12">
+        <ProductCard
+          img={img2}
+          title="Balochi Doch"
+          stars={stars2}
+          price={180}
+          addToCart={() => addToCart({ id: 2, name: 'Balochi Doch', price: 180 })}
+        />
+     </div>
+    <div className="col-lg-4 col-md-6 col-sm-12">
+        <ProductCard
+          img={img3}
+          title="Crochet Dress"
+          stars={stars3}
+          price={120}
+          addToCart={() => addToCart({ id: 3, name: 'Crochet Dress', price: 120 })}
+        />
+     </div>
+    {/* Add more ProductCard components as needed */}
+  </div>
+</div>
+
+        <div className="container-fluid my-5">
+  <div className="mx-3 row">
+    <div className="col-lg-4 col-md-6 col-sm-12">
+      <ProductCard img={img4} title="Applique Chaddar" stars={stars} price={240} addToCart={() => addToCart({ id: 4, name: 'Baby Crochet Design', price: 145 })} />
+    </div>
+    <div className="col-lg-4 col-md-6 col-md-6 col-sm-12">
+      <ProductCard img={img5} title="Embroidered Dress" stars={stars2} price={180} addToCart={() => addToCart({ id: 5, name: 'Balochi Doch', price: 180 })} />
+    </div>
+    <div className="col-lg-4 col-md-6 col-sm-12">
+      <ProductCard img={img6} title="Hand-Embroidered Dress" stars={stars3} price={130} addToCart={() => addToCart({ id: 6, name: 'Crochet Dress', price: 120 })} />
+    </div>
+    {/* Add more ProductCard components as needed */}
+  </div>
+  {/* ... Your existing code ... */}
+</div>
+        <div className="container-fluid my-5">
+  <div className=" mx-3 row">
+    <div className=" col-lg-4 col-md-6 col-sm-12 ">
+      <ProductCard img={img7} title="Applique Dress" stars={stars} price={212} addToCart={() => addToCart({ id: 7, name: 'Baby Crochet Design', price: 145 })} />
+    </div>
+    <div className="col-lg-4 col-md-6 col-sm-12">
+      <ProductCard img={img8} title="Applique Dress" stars={stars2} price={145} addToCart={() => addToCart({ id: 8, name: 'Balochi Doch', price: 180 })} />
+    </div>
+    <div className="col-lg-4 col-md-6 col-sm-12">
+      <ProductCard img={img9} title="Ajrak Dress" stars={stars3} price={80} addToCart={() => addToCart({ id: 9, name: 'Crochet Dress', price: 120 })} />
+    </div>
+    {/* Add more ProductCard components as needed */}
+  </div>
+</div>
+
+        <div className="container-fluid mt-5">
           {/* Cart summary section */}
           <Cart cart={cart} removeFromCart={removeFromCart} />
         </div>

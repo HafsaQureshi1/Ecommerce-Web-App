@@ -18,12 +18,13 @@ export default function Bestselling(){
               <h2 className='mx-5 my-4 fw-bold'>Best Selling </h2>
               </div>
               <div  className="my-3 col-lg-4 col-md-6 col-sm-12">
-              <button style={{textAlign:'right', marginLeft:'200px'}} className=' btn gradient text-white'> <Link to={'/prod'} style={{color:'white',textDecoration:'none'}}> View all</Link></button>
+              <Link to={'/prod'} style={{color:'white',textDecoration:'none'}}>
+              <button style={{textAlign:'right', marginLeft:'200px'}} className=' btn gradient text-white'>  View all</button></Link>
               </div>
             </div>
-            <div className='my-5  container row '>
+            <div className='my-5  container-fluid row '>
     <div  className=' col-lg-3 col-md-6 col-sm-12'>
-    <Card  style={{  border: 'none' }}>
+    <Link style={{color:'black',textDecoration:'none'}} to={'/data'}><Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={s1} />
       <Card.Body>
         <Card.Title>Balochi Doch</Card.Title>
@@ -33,9 +34,11 @@ export default function Bestselling(){
         <br /><br />
         </Card.Text>
       </Card.Body>
-    </Card>
+    </Card></Link>
     </div>
-    <div className='col-lg-3 col-md-6 col-sm-12'><Card  style={{  border: 'none' }}>
+    <div className='col-lg-3 col-md-6 col-sm-12'>
+    <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
+      <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={s2} />
       <Card.Body>
         <Card.Title>Embroidered Dress</Card.Title>
@@ -45,8 +48,10 @@ export default function Bestselling(){
         <br /><br />
         </Card.Text>
       </Card.Body>
-    </Card></div>
-    <div className='col-lg-3 col-md-6 col-sm-12'><Card  style={{  border: 'none' }}>
+    </Card></Link></div>
+    <div className='col-lg-3 col-md-6 col-sm-12'>
+    <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
+      <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={card3} />
       <Card.Body>
         <Card.Title>Embroidered Dress</Card.Title>
@@ -56,8 +61,10 @@ export default function Bestselling(){
         <br /><br />
         </Card.Text>
       </Card.Body>
-    </Card></div>
-    <div className='col-lg-3 col-md-6 col-sm-12'><Card  style={{  border: 'none' }}>
+    </Card></Link></div>
+    <div className='col-lg-3 col-md-6 col-sm-12'>
+    <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
+      <Card  style={{  border: 'none' }}>
       <Card.Img variant="top" src={card2} />
       <Card.Body>
         <Card.Title>Blue Applique Dress </Card.Title>
@@ -67,7 +74,7 @@ export default function Bestselling(){
         <br /><br />
         </Card.Text>
       </Card.Body>
-    </Card></div>
+    </Card></Link></div>
     </div>
             
         </div>

@@ -14,7 +14,7 @@ const Flash = () => {
     <div style={{}} className='mx-5 my-2 container-fluid'>
           <img  className='mx-2 my-2' src={today} alt="" />
         <br /><br />
-        <div className="container row">
+        <div className="container-fluid row">
               <div className="col-lg-10 col-md-6 col-sm-6">
               <h2 className=' my-4 fw-bold'>Flash Sales </h2>
               </div>
@@ -22,9 +22,9 @@ const Flash = () => {
               <img  style={{textAlign:'right'}} src={arrows}/>
               </div>
             </div></div>
-        <div style={{marginLeft:'50px'}} className='my-4 container row '>
+        <div  className='mx-2 my-4 container-fluid row '>
         <div  className=' col-lg-3 col-md-6 col-sm-12'>
-        <Card  style={{  border: 'none' }}>
+        <Link style={{color:'black',textDecoration:'none'}} to={'/data'}> <Card  style={{  border: 'none' }}>
           <Card.Img variant="top" src={card1} />
           <Card.Body>
             <Card.Title>Balochi Doch</Card.Title>
@@ -34,9 +34,9 @@ const Flash = () => {
             <br /><br />
             </Card.Text>
           </Card.Body>
-        </Card>
+        </Card></Link>
         </div>
-        <div className='col-lg-3 col-md-6 col-sm-12'><Card  style={{  border: 'none' }}>
+        <div className='col-lg-3 col-md-6 col-sm-12'><Link style={{color:'black',textDecoration:'none'}} to={'/data'}><Card  style={{  border: 'none' }}>
           <Card.Img variant="top" src={card2} />
           <Card.Body>
             <Card.Title>Embroidered Dress</Card.Title>
@@ -46,8 +46,8 @@ const Flash = () => {
             <br /><br />
             </Card.Text>
           </Card.Body>
-        </Card></div>
-        <div className='col-lg-3 col-md-6 col-sm-12'><Card  style={{  border: 'none' }}>
+        </Card></Link></div>
+        <div className='col-lg-3 col-md-6 col-sm-12'><Link style={{color:'black',textDecoration:'none'}} to={'/data'}><Card  style={{  border: 'none' }}>
           <Card.Img variant="top" src={card3} />
           <Card.Body>
             <Card.Title>Embroidered Dress</Card.Title>
@@ -57,8 +57,10 @@ const Flash = () => {
             <br /><br />
             </Card.Text>
           </Card.Body>
-        </Card></div>
-        <div className='col-lg-3 col-md-6 col-sm-12'><Card  style={{  border: 'none' }}>
+        </Card></Link></div>
+        <div className='col-lg-3 col-md-6 col-sm-12'>
+        <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
+          <Card  style={{  border: 'none' }}>
           <Card.Img variant="top" src={card4} />
           <Card.Body>
             <Card.Title>Blue Applique Dress </Card.Title>
@@ -68,8 +70,9 @@ const Flash = () => {
             <br /><br />
             </Card.Text>
           </Card.Body>
-        </Card></div>
-        <div className='my-3 justify-content-center text-center'><button style={{width :'270px',fontSize:'18px'}} className=' gradient-container btn text-light'><Link style={{color:'white',textDecoration:'none'}} to={'/prod'}>View All products </Link></button>
+        </Card></Link></div>
+        <div className='my-3 justify-content-center text-center'><Link style={{color:'white',textDecoration:'none'}} to={'/prod'}>
+        <button style={{width :'270px',fontSize:'18px'}} className=' gradient-container btn text-light'>View All products </button></Link>
        <br /><br />
        </div>
        <hr />

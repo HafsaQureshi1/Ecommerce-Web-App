@@ -17,7 +17,7 @@ export default function About(){
         <div className="container my-5">
             <img src={head} alt="" />
         </div>
-        <div style={{marginLeft:'100px'}} className=" row container my-3">
+        <div  className="mx-2 row container-fluid my-3">
         <div className=" col-lg-6 col-md-6 col-sm-12 ">
         <h1 className=' my-4 fw-bold'> About us</h1>
         <p>Welcome to Farhang, a vibrant tapestry where tradition meets innovation. Farhang is not just a platform; it's a cultural bridge connecting artisans and art enthusiasts globally.
@@ -48,7 +48,7 @@ Sallers active our site</div>
     </div>
     
 
-        <div style={{marginLeft:'80px'}} className="  container row justify-content-center text-center">
+        <div  className="mx-2  container-fluid row justify-content-center text-center">
             <div className=" col-lg-4 col-md-4 col-sm-12 justify-content-center text-center">
             <img src={ali} alt="" />
             </div>
