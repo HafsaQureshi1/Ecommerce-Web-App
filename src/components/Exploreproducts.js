@@ -20,8 +20,8 @@ export default function ExploreProducts(){
       <img className= ' mx-3 my-2' src={today} alt="" />
     <p className='mx-3 my-3 fw-bold' style={{fontSize:'36px'}}>Explore Our Products <img className='img-fluid' style={{textAlign:'right'}} src={arrows} alt="" /> </p>
     </div>
-    <div style={{marginLeft:'30px'}} className='my-4  container-fluid row '>
-    <div  className=' col-lg-3 col-md-6 col-sm-12'>
+    <div style={{marginLeft:'10px',alignItems:'center'}} className='my-4  container-fluid row '>
+    <div  className=' col-lg-3 col-md-6 col-sm-12 justify-content-center'>
     <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
     <Card  style={{  border: 'none' }}>
       <img src={p1} alt="" />
@@ -79,7 +79,7 @@ export default function ExploreProducts(){
       </Card.Body>
     </Card></Link></div>
     </div>
-    <div style={{marginLeft:'60px'}} className='my-4  container-fluid row '>
+    <div style={{marginLeft:'10px'}} className='my-4  container-fluid row '>
     <div  className=' col-lg-3 col-md-6 col-sm-12'>
     <Link style={{color:'black',textDecoration:'none'}} to={'/data'}>
     
